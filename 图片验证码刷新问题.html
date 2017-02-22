@@ -84,15 +84,19 @@
 
 
 
-<meta name="description" content="对爱情的渴望，对知识的追求，以及对人类苦难无法遏止的同情心，这三种简单而又强烈的感情将会支配我的一生。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="斯乐林">
-<meta property="og:url" content="https://panlvkk.github.io/tags/总结/index.html">
+<meta name="description" content="前言AFNetworking升级到3.0之后setImageWithURL的逻辑有变化，只要请求的图片在缓存中已存在，则直接使用缓存图片，导致原来根据session刷新验证码的流程不能实现。
+AFNetworking3.0之前在升级AFNetworking3.0之前，项目中有获取图片验证码的需求，使用setImageWithURL方法能很容易地实现需求（AFNetworking自动携带服务器返回的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AFNetworking3.0下使用setImageWithURL获取图片验证码">
+<meta property="og:url" content="https://panlvkk.github.io/图片验证码刷新问题.html">
 <meta property="og:site_name" content="斯乐林">
-<meta property="og:description" content="对爱情的渴望，对知识的追求，以及对人类苦难无法遏止的同情心，这三种简单而又强烈的感情将会支配我的一生。">
+<meta property="og:description" content="前言AFNetworking升级到3.0之后setImageWithURL的逻辑有变化，只要请求的图片在缓存中已存在，则直接使用缓存图片，导致原来根据session刷新验证码的流程不能实现。
+AFNetworking3.0之前在升级AFNetworking3.0之前，项目中有获取图片验证码的需求，使用setImageWithURL方法能很容易地实现需求（AFNetworking自动携带服务器返回的">
+<meta property="og:updated_time" content="2017-02-22T09:41:56.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="斯乐林">
-<meta name="twitter:description" content="对爱情的渴望，对知识的追求，以及对人类苦难无法遏止的同情心，这三种简单而又强烈的感情将会支配我的一生。">
+<meta name="twitter:title" content="AFNetworking3.0下使用setImageWithURL获取图片验证码">
+<meta name="twitter:description" content="前言AFNetworking升级到3.0之后setImageWithURL的逻辑有变化，只要请求的图片在缓存中已存在，则直接使用缓存图片，导致原来根据session刷新验证码的流程不能实现。
+AFNetworking3.0之前在升级AFNetworking3.0之前，项目中有获取图片验证码的需求，使用setImageWithURL方法能很容易地实现需求（AFNetworking自动携带服务器返回的">
 
 
 
@@ -120,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="https://panlvkk.github.io/tags/总结/"/>
+  <link rel="canonical" href="https://panlvkk.github.io/图片验证码刷新问题.html"/>
 
 
 
 
 
-  <title> 标签: 总结 | 斯乐林 </title>
+  <title> AFNetworking3.0下使用setImageWithURL获取图片验证码 | 斯乐林 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -166,7 +170,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -258,46 +262,160 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        总结
-        <small>标签</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="https://panlvkk.github.io/图片验证码刷新问题.html">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="silelin">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="斯乐林">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="斯乐林" src="">
+    </span>
+  </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                AFNetworking3.0下使用setImageWithURL获取图片验证码
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-22T16:22:26+08:00">
+                2017-02-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/图片验证码刷新问题.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="图片验证码刷新问题.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>AFNetworking升级到3.0之后setImageWithURL的逻辑有变化，只要请求的图片在缓存中已存在，则直接使用缓存图片，导致原来根据session刷新验证码的流程不能实现。</p>
+<h1 id="AFNetworking3-0之前"><a href="#AFNetworking3-0之前" class="headerlink" title="AFNetworking3.0之前"></a>AFNetworking3.0之前</h1><p>在升级AFNetworking3.0之前，项目中有获取图片验证码的需求，使用setImageWithURL方法能很容易地实现需求（AFNetworking自动携带服务器返回的cookie信息，每次请求根据cookie获取不同的验证码）。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">NSURL *url = [NSURL URLWithString:@&quot;xxx&quot;];</div><div class="line">[myImgView setImageWithURL:url placeholderImage:[UIImage imageNamed:@&quot;xxx&quot;] cache:NSURLRequestReloadIgnoringCacheData];</div></pre></td></tr></table></figure></p>
+<h1 id="AFNetworking3-0"><a href="#AFNetworking3-0" class="headerlink" title="AFNetworking3.0"></a>AFNetworking3.0</h1><p>AFNetworking3.0的setImageWithURL方法去掉了cache参数，直接检查是否有缓存图片，如果有就不再进行新的请求，这样就使得图片验证码不能刷新。采取的解决办法是每次刷新验证码之前，先将内存中的缓存图片清除。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">NSURL *url = [NSURL URLWithString:@&quot;xxx&quot;];</div><div class="line">NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];</div><div class="line">[[[AFImageDownloader defaultInstance] imageCache]removeImageforRequest:request withAdditionalIdentifier:nil];//删除图片缓存</div><div class="line">[request addValue:@&quot;image/*&quot; forHTTPHeaderField:@&quot;Accept&quot;];</div><div class="line">[myImgView setImageWithURLRequest:request placeholderImage:[UIImage imageNamed:@&quot;xxx&quot;] success:nil failure:nil];</div></pre></td></tr></table></figure></p>
 
-      <h1 class="post-title">
+      
+    </div>
+
+    <div>
+      
         
-            <a class="post-title-link" href="/我的2016.html" itemprop="url">
-              
-                <span itemprop="name">我的2016</span>
-              
-            </a>
+
+      
+    </div>
+
+    <div>
+      
         
-      </h1>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-01-20T11:09:38+08:00"
-              content="2017-01-20" >
-          01-20
-        </time>
-      </div>
+      
+    </div>
 
-    </header>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/FirstBlog.html" rel="next" title="开篇">
+                <i class="fa fa-chevron-left"></i> 开篇
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </div>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
           
           </div>
@@ -305,6 +423,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -324,8 +453,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -345,18 +483,11 @@
           
 
           
-            <div class="site-state-item site-state-categories">
-              <a href="/categories">
-                <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">分类</span>
-              </a>
-            </div>
-          
 
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -410,6 +541,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#AFNetworking3-0之前"><span class="nav-number">2.</span> <span class="nav-text">AFNetworking3.0之前</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#AFNetworking3-0"><span class="nav-number">3.</span> <span class="nav-text">AFNetworking3.0</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
@@ -525,6 +672,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
@@ -541,9 +692,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'silelin';
-      var disqus_identifier = 'tags/总结/index.html';
+      var disqus_identifier = '图片验证码刷新问题.html';
 
-      var disqus_title = "";
+      var disqus_title = "AFNetworking3.0下使用setImageWithURL获取图片验证码";
 
 
       function run_disqus_script(disqus_script) {
@@ -556,6 +707,13 @@
 
       run_disqus_script('count.js');
 
+      
+        var disqus_config = function () {
+            this.page.url = disqus_url;
+            this.page.identifier = disqus_identifier;
+            this.page.title = disqus_title;
+        };
+        run_disqus_script('embed.js');
       
 
     </script>
